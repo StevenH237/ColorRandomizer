@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Color Randomizer</string>
+    <string name="action_settings">Settings</string>
+    <string name="redLabel">Red:</string>
+    <string name="greenLabel">Green:</string>
+    <string name="blueLabel">Blue:</string>
+    <string name="randomizeButton">Randomize!</string>
+    <string name="finalColorLabel">Color:</string>
+    <string name="colorResult">#7b7fff</string>
+    <string name="shareText">Share</string>
+    <string name="sendTo">Send this color to&#8230;</string>
+
+</resources>

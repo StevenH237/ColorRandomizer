@@ -1,0 +1,171 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingBottom="0px"
+    android:paddingLeft="0px"
+    android:paddingRight="0px"
+    android:paddingTop="0px"
+    tools:context=".MainActivity" >
+    
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:paddingBottom="@dimen/activity_vertical_margin"
+		    android:paddingLeft="@dimen/activity_horizontal_margin"
+		    android:paddingRight="@dimen/activity_horizontal_margin"
+		    android:paddingTop="@dimen/activity_vertical_margin" >
+		
+		    <EditText
+		        android:id="@+id/redAmountField"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_alignRight="@+id/redAmountBar"
+		        android:layout_toRightOf="@+id/greenLabelText"
+		        android:ems="10"
+		        android:inputType="number"
+		        android:maxLength="@integer/colorTextLength"
+		        android:text="1"
+		        android:textSize="@dimen/textSize" >
+		
+		        <requestFocus />
+		    </EditText>
+		
+		    <TextView
+		        android:id="@+id/redLabelText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBaseline="@+id/redAmountField"
+		        android:layout_alignParentLeft="true"
+		        android:text="@string/redLabel"
+		        android:textSize="@dimen/textSize" />
+		
+		    <SeekBar
+		        android:id="@+id/redAmountBar"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/redLabelText"
+		        android:layout_below="@+id/redAmountField"
+		        android:max="@integer/colorMaximum"
+		        android:progress="@integer/redValue" />
+		
+		    <EditText
+		        android:id="@+id/greenAmountField"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignRight="@+id/redAmountBar"
+		        android:layout_below="@+id/redAmountBar"
+		        android:layout_marginTop="20dp"
+		        android:layout_toRightOf="@+id/greenLabelText"
+		        android:ems="10"
+		        android:inputType="number"
+		        android:maxLength="@integer/colorTextLength"
+		        android:text="2"
+		        android:textSize="@dimen/textSize" />
+		
+		    <TextView
+		        android:id="@+id/greenLabelText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBaseline="@+id/greenAmountField"
+		        android:layout_alignBottom="@+id/greenAmountField"
+		        android:layout_alignLeft="@+id/redAmountBar"
+		        android:text="@string/greenLabel"
+		        android:textSize="@dimen/textSize" />
+		
+		    <SeekBar
+		        android:id="@+id/greenAmountBar"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignRight="@+id/greenAmountField"
+		        android:layout_below="@+id/greenAmountField"
+		        android:max="@integer/colorMaximum"
+		        android:progress="@integer/greenValue" />
+		
+		    <SeekBar
+		        android:id="@+id/blueAmountBar"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@+id/blueAmountField"
+		        android:max="@integer/colorMaximum"
+		        android:progress="@integer/blueValue" />
+		
+		    <EditText
+		        android:id="@+id/blueAmountField"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_below="@+id/greenAmountBar"
+		        android:layout_marginTop="20dp"
+		        android:layout_toRightOf="@+id/greenLabelText"
+		        android:ems="10"
+		        android:inputType="number"
+		        android:maxLength="@integer/colorTextLength"
+		        android:text="3"
+		        android:textSize="@dimen/textSize" />
+		
+		    <TextView
+		        android:id="@+id/blueLabelText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBaseline="@+id/blueAmountField"
+		        android:layout_alignBottom="@+id/blueAmountField"
+		        android:layout_alignLeft="@+id/blueAmountBar"
+		        android:text="@string/blueLabel"
+		        android:textSize="@dimen/textSize" />
+		
+		    <Button
+		        android:id="@+id/randomizeButton"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/blueAmountBar"
+		        android:layout_below="@+id/blueAmountBar"
+		        android:layout_marginTop="20dp"
+		        android:text="@string/randomizeButton"
+		        android:textSize="@dimen/textSize" />
+		
+		    <TextView
+		        android:id="@+id/colorLabelText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/randomizeButton"
+		        android:layout_below="@+id/randomizeButton"
+		        android:layout_marginTop="20dp"
+		        android:text="@string/finalColorLabel"
+		        android:textSize="@dimen/textSize" />
+		
+		    <Button
+		        android:id="@+id/shareButton"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/colorLabelText"
+		        android:layout_below="@+id/colorLabelText"
+		        android:layout_toLeftOf="@+id/colorResultField"
+		        android:text="@string/shareText"
+		        android:textSize="@dimen/textSize" />
+		
+		    <EditText
+		        android:id="@+id/colorResultField"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBaseline="@+id/shareButton"
+		        android:layout_alignBottom="@+id/shareButton"
+		        android:layout_alignRight="@+id/colorText"
+		        android:ems="7"
+		        android:inputType="textNoSuggestions"
+		        android:text="@string/colorResult" />
+
+		    <TextView
+		        android:id="@+id/colorText"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBaseline="@+id/colorLabelText"
+		        android:layout_alignBottom="@+id/colorLabelText"
+		        android:layout_alignLeft="@+id/blueAmountField"
+		        android:text="TextView"
+		        android:textColor="#ffffff"
+		        android:textSize="@dimen/textSize" />
+		
+		</RelativeLayout>
+</ScrollView>

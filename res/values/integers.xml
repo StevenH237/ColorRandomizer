@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="colorTextLength">3</integer>
+    <integer name="colorMaximum">255</integer>
+    <integer name="redValue">123</integer>
+    <integer name="greenValue">127</integer>
+    <integer name="blueValue">255</integer>
+</resources>
